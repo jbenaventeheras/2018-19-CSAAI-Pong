@@ -48,7 +48,7 @@ function main()
     },
 
     draw: function () {
-      this.ctx.fillStyle = 'white';
+      this.ctx.fillStyle = 'orange';
       this.ctx.fillRect(this.x_pala1, this.y_pala1, this.width_palas, this.height_palas)
       this.ctx.fillRect(this.x_pala2, this.y_pala2, this.width_palas, this.height_palas)
 
