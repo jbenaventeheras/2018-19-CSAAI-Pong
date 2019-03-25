@@ -70,13 +70,13 @@ function main()
 		update: function() {
 			// calculate ideal position
 
-
+			if (ball.x > WIDTH/2 ){
 				var desty = ball.y - (this.height - ball.side)*0.5;
 				// ease the movement towards the ideal position
 				this.y += (desty - this.y) * 0.1;
 				// keep the paddle inside of the canvas
 				this.y = Math.max(Math.min(this.y, HEIGHT - this.height), 0);
-
+			}
 
 
 		},
@@ -100,7 +100,7 @@ function main()
 		y:   0,
 		vel: null,
 		side:  15,
-		speed: 2,
+		speed: 7,
 		/**
 		 * Serves the ball towards the specified side
 		 *
@@ -236,7 +236,7 @@ function main()
 			ctx.fillText(score_2,660,30);
 			ctx.restore();
 
-			if(0 > this.x+this.side  ) {
+			if(ball.x > WIDTH+10 ) {
 
 				score_2 += 1;
 
