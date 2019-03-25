@@ -2,9 +2,36 @@
    Lo bordeamos con una linea negra, y le damos
    fondo azul para distinguirlo
 */
-canvas {
-  background-color: black;
-  border-style: solid;
+#canvas {
+  padding-left: 0;
+   padding-right: 0;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   width: 800px;
+
+
+  border-style:ridge;
   border-width: 10px;
-  border-color: red;
+  border-color:inherit;
+}
+body{
+  background: url("space.png");
+}
+
+.boton_2{
+  padding-left: 0;
+   padding-right: 0;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   width: 800px;
+  font-family: fantasy;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 800;
+  font-size: 40px;
+  color: black;
+  background-color: #9b0e0e;
 }
