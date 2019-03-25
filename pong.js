@@ -7,7 +7,7 @@ function main()
 	var canvas = document.getElementById('canvas')
 
 
-
+	score_1 = score_2 = 0,
 	WIDTH  = 700,
 	HEIGHT = 600,
 	pi = Math.PI,
@@ -100,7 +100,7 @@ function main()
 		y:   0,
 		vel: null,
 		side:  15,
-		speed: 7,
+		speed: 8,
 		/**
 		 * Serves the ball towards the specified side
 		 *
@@ -223,7 +223,7 @@ function main()
 		}
 			// dibujar el marcador
   function drawpoints(){
-			score_1 = score_2 = 0
+
 			ctx.save();
 			ctx.shadowOffsetX = shadowOffsetY = 0;
 			ctx.shadowBlur = 10;
@@ -236,12 +236,12 @@ function main()
 			ctx.fillText(score_2,660,30);
 			ctx.restore();
 
-			if(ball.x > WIDTH+10 ) {
+			if(ball.x<0) {
 
-				score_2 += 1;
+				score_2 += 0.5;
 
 					}
-			if(this.x > WIDTH) {
+			if(ball.x >690) {
 
 				score_1 += 1;
 			}
