@@ -23,6 +23,8 @@ function main()
 
 	img_blok1.src = 'tiex2.png';
 	img_blok2.src = 'starwarsnves.png';
+	img_blok2.src = 'estrella_mur.jpeg';
+
 
 	background = new Image;
 	randomBackgroung()
@@ -164,11 +166,6 @@ function main()
 
 
 			}
-
-
-
-
-
 
 		},
 		/**
