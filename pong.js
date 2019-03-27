@@ -8,7 +8,7 @@ function main()
 
 
 	score_1 = score_2 = 0,
-	WIDTH  = 700,
+	WIDTH  = 800,
 	HEIGHT = 600,
 	pi = Math.PI,
 	UpArrow   = 38,
@@ -236,12 +236,14 @@ function main()
 			ctx.fillText(score_2,660,30);
 			ctx.restore();
 
+
 			if(ball.x<0) {
+				console.log(ball.x);
 
 				score_2 += 0.5;
 
 					}
-			if(ball.x >690) {
+			if(ball.x >700 && ball.x<699.9) {
 
 				score_1 += 1;
 			}
