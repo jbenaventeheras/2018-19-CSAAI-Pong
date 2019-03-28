@@ -23,7 +23,6 @@ function main()
 
 	img_blok1.src = 'tiex2.png';
 	img_blok2.src = 'starwarsnves.png';
-	img_blok2.src = 'estrella_mur.jpeg';
 
 
 	background = new Image;
@@ -240,7 +239,7 @@ function main()
 				score_2 += 0.5;
 
 					}
-			if(ball.x >700 && ball.x<699.9) {
+			if(ball.x >700 ) {
 
 				score_1 += 1;
 			}
