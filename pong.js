@@ -24,7 +24,6 @@ function main()
 	img_blok1.src = 'tiex2.png';
 	img_blok2.src = 'starwarsnves.png';
 
-
 	background = new Image;
 	randomBackgroung()
 
